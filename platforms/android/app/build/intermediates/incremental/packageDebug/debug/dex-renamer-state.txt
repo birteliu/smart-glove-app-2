@@ -1,0 +1,4 @@
+#Wed Jul 18 18:38:51 CST 2018
+base.0=/Users/Birte/Documents/my_website/smart-glove-3/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/Birte/Documents/my_website/smart-glove-3/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "蘋方-繁", "微軟繁黑體-標準", "微軟繁黑體-粗體", "微軟正黑體",
+    sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+h1 *,
+h2 *,
+h3 * {
+  font-size: 40px;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.img-100 {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+/**/
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  height: 100vh;
+}
+
+.top-pic {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.top-center {
+  padding-top: 20%;
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  width: 10%;
+  top: 3%;
+  left: 3%;
+  margin: 0;
+  padding: 0;
+}
+
+.top-circle {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.top-text {
+  color: #78756f;
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.top-btn {
+  width: 50%;
+  color: #ffffff;
+  background-color: #8bbe47;
+  padding: 20px;
+  margin: auto;
+  border-radius: 100px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.top-btn a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.top-btn a:visited {
+  color: #ffffff;
+}
+
+.content {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.green-text {
+  color: #8bbe47;
+  font-weight: bold;
+  padding-top: 20px;
+  text-indent: 5px;
+  font-size: 1.5em;
+}
+
+.input-text {
+  border: solid 1px #8bbe47;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.5em;
+}
+.input-text2 {
+  border: solid 1px #8bbe47;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.input-text-all {
+  border: solid 1px #8bbe47;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.input-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #8bbe47;
+  border: solid 1px #8bbe47;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #ffffff;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.four-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #8bbe47;
+  border: solid 1px #8bbe47;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.col-xs-8 {
+  padding-right: 0;
+}
+
+.col-xs-4 {
+  padding-left: 0;
+}
+.white-color {
+  color: #ffffff;
+}
+
+.gray-color {
+  color: #78756f;
+}
+
+.green-color {
+  color: #8bbe47;
+}
+.set-btn {
+  width: 15%;
+  margin: 15px 0 0 10px;
+  float: right;
+}
+.back-btn {
+  width: 15%;
+  margin: 15px 10px 0 0px;
+  float: left;
+}
+.glove-img {
+  width: 100%;
+  padding-bottom: 5px;
+  margin-top: -20px;
+}
+.glove-btn {
+  width: 20%;
+  color: #ffffff;
+  background-color: #ffffff;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+}
+.connect-text {
+  color: #8bbe47;
+}
+.card {
+  margin-top: 15px;
+  border: solid 1px #8bbe47;
+  border-radius: 10px;
+}
+.count-title {
+  text-align: center;
+  padding: 5px;
+  background-color: #8bbe47;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+.count-result {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.count-describe {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+.chart-content {
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 450px) {
+  .top-center {
+    padding-top: 5%;
+    text-align: center;
+  }
+  .top-circle {
+    width: 30%;
+  }
+  .top-btn {
+    width: 30%;
+    color: #ffffff;
+    background-color: #8bbe47;
+    padding: 15px;
+    margin: auto;
+    border-radius: 100px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .set-btn {
+    width: 5%;
+  }
+  .back-btn {
+    width: 5%;
+  }
+  .glove-img {
+    width: 30%;
+  }
+}
+@media (max-width: 320px) {
+  .four-btn {
+    padding: 10px 0;
+  }
+}

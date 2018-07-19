@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src * 'unsafe-eval'">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>btapp</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/farm.css" />
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+
+<body>
+    <section>
+        <ul id="pages" class="view-container">
+            <li id="pageA" class="page-container" style="display:block; overflow: scroll;">
+                <div class="container-fluid">
+                    <div class="top">
+                        <div class="top-pic" style="background-image:url('img/bg.jpg')">
+                            <img src="img/top-logo.png" alt="" class="img-responsive logo">
+                            <div class="container col-md-8 col-md-offset-2 top-center">
+                                <!--<img src="img/smartglove.gif" alt="" class="img-responsive top-circle">-->
+                                <img src="img/smart-glove.gif" alt="" class="img-responsive top-circle">
+                                <div class="top-text">採收與搬運智慧穿戴式輔具
+                                    <br>農委會 - 智慧農業 4.0 專案</div>
+                                <div class="top-btn">
+                                    <a id="btnNext1">Let’s Go</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--top-pic-->
+                    </div>
+                    <!--top-->
+                </div>
+                <!--container-fuild-->
+            </li>
+            <li id="pageB" class="page-container" style="left:100%; display:none; overflow: scroll;">
+                <div class="container">
+                    <div class="content row">
+                        <div class="col-xs-12">
+                            <img src="img/setting.png" class="set-btn" id="btnNext2" alt="">
+                        </div>
+                        <!--setting-->
+                        <div class="col-xs-12" style="text-align: center;">
+                            <button type="button" id="btn_set_btaddr" class="glove-btn">
+                                <img src="img/glove.png" alt="" class="glove-img">
+                            </button>
+                            <div id="txt_btconnect_status" class="connect-text">手套狀態：未連結</div>
+                            <!-- <button type="button" id="btn_set_btaddr" class="glove-btn">連結</button> -->
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="card">
+                                <div class="count-title">計數值</div>
+                                <div id="txt_cnt" class="count-result">0</div>
+                                <div class="count-describe">壓力閾值計數</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="card" style="margin-bottom: 15px;">
+                                <div class="count-title">壓力圖表</div>
+                                <div class="chart-content" style="margin-bottom: 20px;">
+                                    <div id="chart_div"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content-->
+                </div>
+                <!--container-->
+            </li>
+            <li id="pageC" class="page-container" style="left:200%;display:none; background-color: #ffffff; overflow: scroll;">
+                <div class="container">
+                    <div class="content row">
+                        <div class="col-xs-12">
+                            <img src="img/arrow.png" class="back-btn" id="pageBack" alt="">
+                        </div>
+                        <div class="col-xs-12">
+                            <select id="select_device" class="form-control input-text2 green-color" style="height: 44px">
+                                <option value="">選擇裝置</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-8">
+                            <div id="txt_sensor_status" class="input-text green-color">感測器開關：關閉</div>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" id="btn_sensorstatus_switch" class="input-btn">ON / OFF</button>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="green-text">壓力閾值 ( T ) & 感測間隔 ( D )</div>
+                            <input type="text" id="input_set_value" class="input-text-all">
+                        </div>
+                        <div class="col-xs-3" style="padding-right: 0px;">
+                            <button type="button" id="btn_set_threshold" class="four-btn">設定 T</button>
+                        </div>
+                        <div class="col-xs-3" style="padding-left: 7.5px; padding-right: 3.5px;">
+                            <button type="button" id="btn_get_threshold" class="four-btn">取得 T</button>
+                        </div>
+                        <div class="col-xs-3" style="padding-left: 3.5px; padding-right: 7.5px;">
+                            <button type="button" id="btn_set_duration" class="four-btn">設定 D</button>
+                        </div>
+                        <div class="col-xs-3" style="padding-left: 0;">
+                            <button type="button" id="btn_get_duration" class="four-btn">取得 D</button>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="input-text-all" style="margin-bottom: 10px">
+                                <div id="txt_threshold" style="line-height: 2;">壓力閾值：0</div>
+                                <div id="txt_duration" style="line-height: 2;">感測間隔：0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="cordova.js"></script>
+    <script src="js/webduino-base.min.js"></script>
+    <script src="js/CordovaBluetoothTransport.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bluetoothCoreFunc.js"></script>
+    <script src="js/frame.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

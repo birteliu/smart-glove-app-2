@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/Birte/Documents/my_website/smart-glove-3/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/Birte/Documents/my_website/smart-glove-3/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "-1,2,-1",
+                        "startColumns": "-1,4,-1",
+                        "startOffsets": "-1,55,-1",
+                        "endColumns": "-1,48,-1",
+                        "endOffsets": "-1,99,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,168",
+                        "endColumns": "63,48,58",
+                        "endOffsets": "114,163,222"
+                    }
+                }
+            ]
+        }
+    ]
+}
